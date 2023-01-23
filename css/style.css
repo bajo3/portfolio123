@@ -3,13 +3,44 @@
 * {
     box-sizing: border-box;
     font-family: 'Work Sans';
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 }
 
 html {
     scroll-behavior: smooth;
 }
+/*boostrap*/
+
+.navbar-brand {
+    padding: 10px ;
+    font-family: 'Righteous' ;
+    font-size: 36px ;
+    color: violet !important;
+    text-decoration: none;
+}
+
+.navbar{
+    color: rgb(10, 10, 10) !important; 
+}
+.nav-link{
+    text-align: none;
+    color: aquamarine !important;
+    margin: 0 10px !important;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    transform: scale(1.2);
+    color: pink !important;
+background: rgb(72, 1, 94);
+border-radius: 30px;
+   
+transition: .5s;
+}
+
 
 /*Menu*/
 .contenedor__header {
@@ -96,6 +127,7 @@ html {
 }
 
 .inicio .contenido__banner h2 {
+    margin-top: 20px;
     font-size: 15px;
     font-weight: normal;
 }
@@ -132,6 +164,7 @@ html {
 }
 
 .sobremi h2 {
+    margin-top: 20px;
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -230,6 +263,7 @@ html {
 }
 
 .descargar__cv h2 {
+    margin-top: 20px;
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -319,6 +353,7 @@ html {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
+    max-height: 1100px;
 }
 
 .portfolio .contenido__seccion {
@@ -327,6 +362,7 @@ html {
 }
 
 .portfolio h2 {
+    margin-top: 20px;
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
@@ -395,6 +431,7 @@ html {
 }
 
 .contacto h2 {
+    margin-top: 20px;
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
