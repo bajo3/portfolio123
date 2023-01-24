@@ -49,54 +49,6 @@ html {
 
 
 /*Menu*/
-.contenedor__header {
-    background: #1e2326;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.contenedor__header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.contenedor__header header .nav__logo a {
-    padding: 10px;
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: violet;
-    text-decoration: none;
-}
-
-
-.contenedor__header header ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-.contenedor__header header ul li a {
-    text-align: none;
-    color: aquamarine;
-    margin: 0 10px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-
-.contenedor__header header ul li a:hover {
-    background-color: black;
-    padding: 5px;
-    border-radius: 20px;
-    color: aqua;
-}
 
 .inicio {
     background: url(../img/fondo/1.jpg);
@@ -164,6 +116,12 @@ html {
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .sobremi {
+
+      height: 130vh;
+}
+}
 .sobremi .contenido__seccion {
     max-width: 1100px;
     margin: auto;
@@ -212,6 +170,14 @@ html {
 
 .sobremi .fila .col ul li {
     margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+    .sobremi .fila .col ul li {
+
+       display: flex;
+       flex-direction: column;
+    }
 }
 
 .sobremi .fila .col ul li strong {
@@ -361,7 +327,14 @@ html {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
-    max-height: 1100px;
+    height: 1100px;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+
+      height: 290vh;
+}
 }
 
 .portfolio .contenido__seccion {
@@ -378,10 +351,27 @@ html {
 }
 
 .portfolio .galeria {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
 }
+
+@media (max-width: 768px) {
+    .portfolio .galeria {
+
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+@media (max-width: 1024px) {
+    .portfolio .galeria {
+
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+
 
 .portfolio .galeria .proyecto {
     position: relative;
@@ -524,9 +514,4 @@ footer .arriba {
     font-size: 18px;
 }
 
-@media (max-width: 600px) {
-    .contacto .col .info {
 
-        flex-direction: column;
-    }
-}
