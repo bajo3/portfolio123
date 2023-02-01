@@ -35,16 +35,14 @@ html {
     margin: 0 10px !important;
     padding: 3px;
     transition: .5s;
+    border-radius: 9px;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    transform: scale(1.2);
-    color: pink !important;
-    background: rgb(72, 1, 94);
-    border-radius: 30px;
+box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px violet;
+transition: .5s;
 
-    transition: .5s;
 }
 
 
@@ -53,7 +51,7 @@ html {
 .inicio {
     background: url(../img/fondo/1.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 88vh;
     color: white;
     display: flex;
     align-items: center;
@@ -109,11 +107,12 @@ html {
 
 /*Sobre mi*/
 
-.sobremi {
+.sobremi { 
     background-color: black;
+    background-size: cover;
     color: #fff;
     padding: 50px 20px;
-    height: 100vh;
+    height: 88vh;
 }
 
 @media (max-width: 768px) {

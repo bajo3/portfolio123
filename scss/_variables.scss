@@ -1,0 +1,9 @@
+$color-primario: violet;
+$color-secundario: aquamarine;
+$color-texto: wheat;
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
