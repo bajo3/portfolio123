@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
@@ -9,20 +10,27 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  color: rgb(10, 10, 10) !important;
+body {
+  background: black;
 }
-.navbar .navbar-light .navbar-toggler {
-  background: aquamarine;
+
+.contenedor__header .bg-dark {
+  background: black !important;
 }
-.navbar .navbar-brand {
+.contenedor__header .navbar .container .navbar-toggler {
+  background: violet !important;
+}
+.contenedor__header .navbar .navbar-brand {
   padding: 10px;
-  font-family: "Righteous";
-  font-size: 36px;
+  font-family: "Righteous" !important;
+  font-size: 40px;
   color: violet !important;
   text-decoration: none;
+  color: violet !important;
 }
-.navbar .nav-link {
+.contenedor__header .navbar .nav-link {
+  font-family: "Righteous" !important;
+  font-size: 20px;
   text-align: none;
   color: aquamarine !important;
   margin: 0 10px !important;
@@ -31,8 +39,9 @@ html {
   border-radius: 9px;
   text-decoration: none;
 }
-.navbar .nav-link:hover {
-  box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px violet;
+.contenedor__header .navbar .nav-link:hover {
+  transform: scale(1.4);
+  color: violet !important;
   transition: 0.5s;
 }
 
@@ -93,11 +102,12 @@ html {
   background-size: cover;
   color: #fff;
   padding: 50px 20px;
-  height: 92vh;
+  height: 98h;
 }
 .sobremi .contenido__seccion {
   max-width: 1100px;
   margin: auto;
+  text-align: justify;
 }
 .sobremi h2 {
   margin-top: 20px;
@@ -106,7 +116,13 @@ html {
   text-align: center;
   padding: 20px 0;
 }
+.sobremi h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
 .sobremi .contenido__seccion p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 20px;
@@ -134,6 +150,7 @@ html {
 .sobremi .contenido__seccion p span {
   color: aquamarine;
   font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .sobremi .container {
   display: flex;
@@ -149,18 +166,15 @@ html {
 .sobremi .fila .col {
   width: 100%;
 }
-.sobremi .fila .col h3 {
-  font-size: 28px;
-  font-family: "Righteous";
-  margin-bottom: 25px;
-}
 .sobremi .fila .col ul {
   list-style: none;
 }
 .sobremi .fila .col ul li {
   margin: 12px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .sobremi .fila .col ul li strong {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: inline-block;
   color: aquamarine;
   width: 200px;
@@ -170,6 +184,7 @@ html {
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .sobremi button {
   cursor: pointer;
@@ -224,7 +239,7 @@ html {
 }
 /*SECCION DESCARGAR CV*/
 .descargar__cv {
-  background-color: rgb(41, 40, 40);
+  background-color: rgb(0, 0, 0);
   color: #fff;
   padding: 50px 20px;
   height: 100vh;
@@ -308,7 +323,7 @@ html {
 
 /* SECCION proyectos */
 .portfolio {
-  background-color: #252A2E;
+  background-color: #030303;
   color: #fff;
   padding: 50px 20px;
   height: 1100px;
@@ -460,19 +475,12 @@ html {
   width: 100%;
 }
 
-footer .arriba {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: aquamarine;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -25px;
-  border-radius: 50%;
-  line-height: 50px;
-  font-size: 18px;
+footer {
+  margin-top: 20px;
+  background: black;
+  height: 8vh;
+  color: wheat;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import "variables.scss";
 
 * {
@@ -10,41 +11,55 @@
 html {
     scroll-behavior: smooth;
 }
-
-// Menu Boostrap
-.navbar {
-    color: rgb(10, 10, 10) !important;
-
-    .navbar-light .navbar-toggler {
-        background: $color-secundario;
-    }
-
-    .navbar-brand {
-        padding: 10px;
-        font-family: 'Righteous';
-        font-size: 36px;
-        color: $color-primario !important;
-        text-decoration: none;
-    }
-
-    .nav-link {
-        text-align: none;
-        color: $color-secundario !important;
-        margin: 0 10px !important;
-        padding: 3px;
-        transition: .5s;
-        border-radius: 9px;
-        text-decoration: none;
-    }
-
-    //Hover
-    .nav-link:hover {
-        box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px $color-primario;
-        transition: .5s;
-
-    }
-
+body{
+    background: black;
 }
+// Menu Boostrap
+.contenedor__header{
+    .bg-dark{
+        background: black !important;
+    }
+
+    .navbar {
+      
+    .container{
+        .navbar-toggler {
+            background: violet !important;
+        }
+    
+    }
+        .navbar-brand {
+            padding: 10px;
+            font-family: 'Righteous' !important;
+            font-size: 40px;
+            color: $color-primario !important;
+            text-decoration: none;
+            color: violet !important;
+        }
+    
+        .nav-link {
+            font-family: "Righteous" !important;
+            font-size: 20px;
+            text-align: none;
+            color: $color-secundario !important;
+            margin: 0 10px !important;
+            padding: 3px;
+            transition: .5s;
+            border-radius: 9px;
+            text-decoration: none;
+        }
+    
+        //Hover
+        .nav-link:hover {
+            transform: scale(1.4);
+            color: violet !important;
+            transition: .5s;
+    
+        }
+    
+    }
+}
+
 
 // inicio
 .inicio {
@@ -114,11 +129,12 @@ html {
     background-size: cover;
     color: #fff;
     padding: 50px 20px;
-    height: 92vh;
+    height: 98h;
 
     .contenido__seccion {
         max-width: 1100px;
         margin: auto;
+        text-align: justify;
     }
 
     h2 {
@@ -129,7 +145,15 @@ html {
         padding: 20px 0;
     }
 
+    h3 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+
     .contenido__seccion p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 20px;
@@ -162,7 +186,8 @@ html {
 
     .contenido__seccion p span {
         color: $color-secundario;
-        font-weight: bold;
+        font-weight: bold; 
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 .container{
    display: flex;
@@ -182,21 +207,18 @@ html {
         width: 100%;
     }
 
-    .fila .col h3 {
-        font-size: 28px;
-        font-family: 'Righteous';
-        margin-bottom: 25px;
-    }
-
+ 
     .fila .col ul {
         list-style: none;
     }
 
     .fila .col ul li {
         margin: 12px 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .fila .col ul li strong {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: inline-block;
         color: $color-secundario;
         width: 200px;
@@ -207,6 +229,7 @@ html {
         padding: 3px;
         font-weight: bold;
         border-radius: 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     button {
@@ -264,7 +287,7 @@ html {
 /*SECCION DESCARGAR CV*/
 
 .descargar__cv {
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 50px 20px;
     height: 100vh;
@@ -364,7 +387,7 @@ html {
 
 /* SECCION proyectos */
 .portfolio {
-    background-color: #252A2E;
+    background-color: #030303;
     color: #fff;
     padding: 50px 20px;
     height: 1100px;
@@ -537,17 +560,11 @@ html {
 
 }
 
-footer .arriba {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: $color-secundario;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
+footer {
+    margin-top: 20px;
+    background: black;
+    height: 8vh;
+    color: wheat;
+    text-align: center;
+    
 }

@@ -13,8 +13,8 @@ html {
 
 /*boostrap*/
 
-.navbar-light .navbar-toggler {
-    background: aquamarine;
+.navbar-toggler {
+    background: aquamarine !important;
 }
 
 .navbar-brand {
@@ -26,7 +26,7 @@ html {
 }
 
 .navbar {
-    color: rgb(10, 10, 10) !important;
+    color: rgb(12, 12, 12) !important;
 }
 
 .nav-link {
