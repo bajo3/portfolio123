@@ -48,7 +48,7 @@ body {
 .inicio {
   background: url(../img/fondo/1.jpg);
   background-size: cover;
-  height: 88vh;
+  height: 98vh;
   color: wheat;
   display: flex;
   align-items: center;
@@ -213,21 +213,41 @@ body {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .sobremi {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 159vh;
+    height: 178vh;
     text-align: center;
   }
-  .container {
+  .sobremi .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .sobremi .fila {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sobremi .fila br {
+    display: inline;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 395px) {
+  .sobremi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 207vh;
+    text-align: center;
+  }
+  .sobremi .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .sobremi .fila {
     display: flex;
     flex-direction: column;
@@ -242,7 +262,7 @@ body {
   background-color: rgb(0, 0, 0);
   color: #fff;
   padding: 50px 20px;
-  height: 100vh;
+  height: 75vh;
 }
 .descargar__cv .contenido__seccion {
   max-width: 1100px;
@@ -326,7 +346,7 @@ body {
   background-color: #030303;
   color: #fff;
   padding: 50px 20px;
-  height: 1100px;
+  height: 100vh;
 }
 .portfolio .contenido__seccion {
   max-width: 1100px;
@@ -382,25 +402,25 @@ body {
 .portfolio .galeria .proyecto .overlay:hover {
   opacity: 1;
 }
-@media (max-width: 768px) {
-  .portfolio .portfolio {
-    height: 290vh;
-  }
-}
-@media (max-width: 768px) {
-  .portfolio .portfolio .galeria {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 1024px) {
-  .portfolio .portfolio .galeria {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
 
+@media (max-width: 968px) {
+  .portfolio {
+    height: 230vh;
+  }
+  .portfolio .contenido__seccion .galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 393px) {
+  .portfolio {
+    height: 237vh;
+  }
+  .portfolio .contenido__seccion .galeria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 /* SECCION CONTACTO */
 .contacto {
   background-image: url(../img/contact_bg.png);
@@ -493,6 +513,10 @@ footer h3, footer h4 {
   border: 1px solid aquamarine;
   border-radius: 15px;
   cursor: default;
+  font-size: 20px;
+}
+footer h4 {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

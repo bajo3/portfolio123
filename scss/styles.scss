@@ -68,7 +68,7 @@ body {
 .inicio {
     background: url(../img/fondo/1.jpg);
     background-size: cover;
-    height: 88vh;
+    height: 98vh;
     color: $color-texto;
     display: flex;
     align-items: center;
@@ -267,27 +267,49 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .sobremi {
         @include flex-column;
-        height: 159vh;
+        height: 178vh;
         text-align: center;
-    }
 
-    .container {
-        @include flex-column;
+        .container {
+            @include flex-column;
+        }
+
+        .fila {
+            @include flex-column;
+        }
+
+        .fila br {
+            display: inline;
+        }
     }
 }
 
-@media (max-width: 768px) {
-    .sobremi .fila {
+@media (max-width: 395px) {
+    .sobremi {
         @include flex-column;
-    }
+        height: 207vh;
+        text-align: center;
 
-    .sobremi .fila br {
-        display: inline;
+        .container {
+            @include flex-column;
+        }
+
+        .fila {
+            @include flex-column;
+        }
+
+        .fila br {
+            display: inline;
+        }
     }
 }
+
+
+
+
 
 /*SECCION DESCARGAR CV*/
 
@@ -295,7 +317,7 @@ body {
     background-color: rgb(0, 0, 0);
     color: #fff;
     padding: 50px 20px;
-    height: 100vh;
+    height: 75vh;
 
     .contenido__seccion {
         max-width: 1100px;
@@ -381,6 +403,9 @@ body {
         height: 100%;
     }
 
+}
+
+@media (max-width: 576px){
 
 }
 
@@ -390,7 +415,7 @@ body {
     background-color: #030303;
     color: #fff;
     padding: 50px 20px;
-    height: 1100px;
+    height: 100vh;
 
     .contenido__seccion {
         max-width: 1100px;
@@ -449,28 +474,26 @@ body {
         opacity: 1;
     }
 
+}
 
-
-    @media (max-width: 768px) {
-        .portfolio {
-            height: 290vh;
-        }
+@media (max-width: 968px) {
+    .portfolio{
+        height: 230vh;
+    .contenido__seccion .galeria {
+        display: flex;
+        flex-wrap: wrap;
     }
+}
+}
 
-    @media (max-width: 768px) {
-        .portfolio .galeria {
-            @include flex-column;
-        }
+@media (max-width: 393px) {
+    .portfolio{
+        height: 237vh;
+    .contenido__seccion .galeria {
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    @media (max-width: 1024px) {
-        .portfolio .galeria {
-
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
-
+}
 }
 
 
@@ -570,9 +593,11 @@ footer {
         border: 1px solid $color-secundario;
         border-radius: 15px;
         cursor: default;
+        font-size: 20px
     }
 
     h4 {
         @extend h3;
+        font-size: 15px;
     }
 }
