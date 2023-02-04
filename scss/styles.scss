@@ -11,23 +11,26 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: black;
 }
+
 // Menu Boostrap
-.contenedor__header{
-    .bg-dark{
+.contenedor__header {
+    .bg-dark {
         background: black !important;
     }
 
     .navbar {
-      
-    .container{
-        .navbar-toggler {
-            background: violet !important;
+
+        .container {
+            .navbar-toggler {
+                background: violet !important;
+            }
+
         }
-    
-    }
+
         .navbar-brand {
             padding: 10px;
             font-family: 'Righteous' !important;
@@ -36,7 +39,7 @@ body{
             text-decoration: none;
             color: violet !important;
         }
-    
+
         .nav-link {
             font-family: "Righteous" !important;
             font-size: 20px;
@@ -48,15 +51,15 @@ body{
             border-radius: 9px;
             text-decoration: none;
         }
-    
+
         //Hover
         .nav-link:hover {
             transform: scale(1.4);
             color: violet !important;
             transition: .5s;
-    
+
         }
-    
+
     }
 }
 
@@ -124,7 +127,7 @@ body{
 /*Sobre mi*/
 
 .sobremi {
-    
+
     background-color: black;
     background-size: cover;
     color: #fff;
@@ -138,11 +141,7 @@ body{
     }
 
     h2 {
-        margin-top: 20px;
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
+        @include h2-title
     }
 
     h3 {
@@ -158,56 +157,60 @@ body{
         line-height: 22px;
         margin-bottom: 20px;
 
-        .orange{
+        .orange {
             color: orange;
             font-size: 24px;
         }
-        .blue{
+
+        .blue {
             color: rgb(8, 109, 241);
             font-size: 24px;
         }
-        .yellow{
+
+        .yellow {
             color: yellow;
             font-size: 24px;
         }
 
-        .pink{
+        .pink {
             color: rgb(221, 128, 128);
             font-size: 24px;
         }
 
-        .violet{
-            color:rgb(206, 19, 206) ;
+        .violet {
+            color: rgb(206, 19, 206);
             font-size: 24px;
         }
-    
+
     }
 
 
     .contenido__seccion p span {
         color: $color-secundario;
-        font-weight: bold; 
+        font-weight: bold;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-.container{
-   display: flex;
-   justify-content: center;
-}
 
-    .fila img{
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fila img {
         margin: auto;
         width: 300px;
     }
 
 
-    .fila br{
+    .fila br {
         display: none;
     }
+
     .fila .col {
         width: 100%;
     }
 
- 
+
     .fila .col ul {
         list-style: none;
     }
@@ -270,7 +273,8 @@ body{
         height: 159vh;
         text-align: center;
     }
-    .container{
+
+    .container {
         @include flex-column;
     }
 }
@@ -279,7 +283,8 @@ body{
     .sobremi .fila {
         @include flex-column;
     }
-    .sobremi .fila br{
+
+    .sobremi .fila br {
         display: inline;
     }
 }
@@ -298,12 +303,7 @@ body{
     }
 
     h2 {
-        margin-top: 20px;
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
-
+        @include h2-title
     }
 
     .contenido__seccion p {
@@ -398,11 +398,7 @@ body{
     }
 
     h2 {
-        margin-top: 20px;
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
+        @include h2-title
     }
 
     .galeria {
@@ -494,11 +490,7 @@ body{
     }
 
     h2 {
-        margin-top: 20px;
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
+        @include h2-title
     }
 
     .fila {
@@ -561,10 +553,26 @@ body{
 }
 
 footer {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
     background: black;
     height: 8vh;
     color: wheat;
     text-align: center;
-    
+
+    h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1px 5px;
+        border: 1px solid $color-secundario;
+        border-radius: 15px;
+        cursor: default;
+    }
+
+    h4 {
+        @extend h3;
+    }
 }
