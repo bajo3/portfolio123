@@ -1,0 +1,17 @@
+$color-primario: violet;
+$color-secundario: aquamarine;
+$color-texto: wheat;
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@mixin h2-title{
+    margin-top: 20px;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}

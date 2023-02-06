@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Distressed&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,800;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin-top: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*boostrap*/
+
+.navbar-toggler {
+    background: aquamarine !important;
+}
+
+.navbar-brand {
+    padding: 10px;
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: violet !important;
+    text-decoration: none;
+}
+
+.navbar {
+    color: rgb(12, 12, 12) !important;
+}
+
+.nav-link {
+    text-align: none;
+    color: aquamarine !important;
+    margin: 0 10px !important;
+    padding: 3px;
+    transition: .5s;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+box-shadow: 0 0 10px 0 pink inset, 0 0 10px 4px violet;
+transition: .5s;
+
+}
+
+
+/*Menu*/
+
+.inicio {
+    background: url(../img/fondo/1.jpg);
+    background-size: cover;
+    height: 88vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido__banner {
+    padding: 10px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido__banner img {
+    margin-top: 40px;
+    border: 5px solid rgb(87, 3, 197);
+    display: block;
+    height: 250px;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido__banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.inicio .contenido__banner h2 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido__banner .redes a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(80, 0, 145);
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    transition: 0.3s;
+}
+
+.inicio .contenido__banner .redes a:hover {
+    background-color: #1cb;
+}
+
+/*Sobre mi*/
+
+.sobremi { 
+    background-color: black;
+    background-size: cover;
+    color: #fff;
+    padding: 50px 20px;
+    height: 88vh;
+}
+
+@media (max-width: 768px) {
+    .sobremi {
+
+      height: 130vh;
+}
+}
+.sobremi .contenido__seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.sobremi .contenido__seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .contenido__seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sobremi .fila .col {
+    width: 100%;
+}
+
+.sobremi .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+@media (max-width: 768px) {
+    .sobremi .fila .col ul li {
+
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: 200px;
+}
+
+.sobremi .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/*SECCION DESCARGAR CV*/
+
+.descargar__cv {
+    background-color: rgb(41, 40, 40);
+    color: #fff;
+    padding: 50px 20px;
+    height: 100vh;
+}
+
+.descargar__cv .contenido__seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.descargar__cv h2 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.descargar__cv .contenido__seccion p {
+    margin-top: 70px;
+    font-size: 28px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.descargar__cv .contenido__seccion p span {
+    font-size: 35px;
+    color: #1CB698;
+    font-weight: bold;
+}
+
+
+.neon {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 10px 30px;
+    margin: 20px auto;
+    border: 2px solid #fff;
+    color: #050505;
+    transition: 0.5s;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Righteous';
+    font-size: 26px;
+    text-decoration: none;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0003);
+    width: fit-content;
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 6px solid #21ebff;
+    border-left: 6px solid #21ebff;
+    transition: .5s;
+}
+
+.neon:hover {
+    background: #21ebff;
+    color: #111;
+    box-sizing: 0 0 50px #21ebff;
+    transition-delay: 0.5s;
+
+}
+
+.neon:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 6px solid #21ebff;
+    border-right: 6px solid #21ebff;
+    transition: .5s;
+}
+
+.neon:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+
+.neon:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* SECCION proyectos */
+.portfolio {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+    height: 1100px;
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+
+      height: 290vh;
+}
+}
+
+.portfolio .contenido__seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .portfolio .galeria {
+
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+@media (max-width: 1024px) {
+    .portfolio .galeria {
+
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(../img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .contenido__seccion {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+
